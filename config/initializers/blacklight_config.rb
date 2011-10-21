@@ -44,7 +44,7 @@ Blacklight.configure(:shared) do |config|
   # config[:facet] << {:field_name => "format", :label => "Format", :limit => 10}
   config[:facet] = {
     :field_names => (facet_fields = [
-      "object_type_facet",
+      "active_fedora_model_s",
       "pub_date",
       "subject_topic_facet",
       "language_facet",
@@ -53,7 +53,7 @@ Blacklight.configure(:shared) do |config|
       "subject_era_facet"
     ]),
     :labels => {
-      "object_type_facet"   => "Format",
+      "active_fedora_model_s"   => "Format",
       "pub_date"            => "Publication Year",
       "subject_topic_facet" => "Topic",
       "language_facet"      => "Language",

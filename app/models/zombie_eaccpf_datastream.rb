@@ -74,7 +74,7 @@ class ZombieEaccpfDatastream < ActiveFedora::NokogiriDatastream
    			 <term></term>
    		 </occupation>
    		 <biogHist>
-   			 <p>foo</p>
+   			 <p>Bar</p>
    			 <chronList>
    				 <chronItem>
    					 <date></date>

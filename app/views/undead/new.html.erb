@@ -1,0 +1,16 @@
+<h1>Create the Undead</h1>
+<%= form_for @undead do |f| %>
+  <div>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+  <div>
+    <%= f.label :date_of_birth %>
+    <%= f.text_field :date_of_birth %>
+  </div>
+  <div>
+    <%= f.label :date_undeath %>
+    <%= f.text_field :date_undeath %>
+  </div>
+  <%= f.submit "Create!"%>
+<% end %>

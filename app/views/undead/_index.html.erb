@@ -1,0 +1,20 @@
+<tr class="document <%= cycle("even","odd") %>">
+  <td>
+    <%= link_to document.fetch("first_name_t", document["id"]), undead_path(document["id"]) %>
+  </td>
+  <td>
+
+  </td>
+  <td>
+    <%= DateTime.parse(document.fetch(:system_create_dt,nil)).to_time %>
+  </td>
+  <td>
+    <%= (document.fetch(:medium_t,nil) || document_type(document)).gsub("Hydrangea","") %>
+  </td>
+  <td>
+    <%= get_file_asset_count(document)%>
+  </td>
+  <td>
+    Created!!!
+  </td>
+</tr>

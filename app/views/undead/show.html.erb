@@ -1,0 +1,14 @@
+<h1><%= @undead.first_name %></h1>
+
+<div class="page_links">
+browse | <%= link_to "edit", edit_undead_path(@undead) %>
+</div>
+
+<dl>
+  <dt>First Name</dt>
+  <dd><%= @undead.first_name %></dd>
+  <dt>Date of Birth</dt>
+  <dd><%= @undead.date_of_birth %></dd>
+  <dt>Date of Undeath</dt>
+  <dd><%= @undead.date_undeath %></dd>
+</dl>

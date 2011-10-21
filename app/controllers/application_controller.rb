@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
    include Blacklight::Controller  
 # Adds Hydra behaviors into the application controller 
   include Hydra::Controller
+  include MediaShelf::ActiveFedoraHelper
+  
   def layout_name
    'hydra-head'
   end
